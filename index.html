@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto académico de introducción al desarrollo web y al control de versiones con Git y GitHub.">
+  <title>Mi primera página web | Portafolio</title>
+  <style>
+    :root { --navy:#10233f; --blue:#2563eb; --sky:#eaf2ff; --ink:#172033; --muted:#64748b; --white:#fff; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body { font-family:Arial, Helvetica, sans-serif; background:#f5f8ff; color:var(--ink); line-height:1.6; }
+    header { background:linear-gradient(135deg,#10233f,#1d4ed8); color:white; padding:22px 8%; }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap; }
+    .brand { font-weight:800; letter-spacing:.5px; font-size:1.15rem; }
+    nav a { color:white; text-decoration:none; margin-left:18px; font-size:.95rem; }
+    nav a:hover { text-decoration:underline; }
+    .hero { padding:78px 8% 86px; color:white; background:linear-gradient(135deg,#10233f,#1d4ed8); }
+    .tag { display:inline-block; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.3); padding:7px 13px; border-radius:30px; font-size:.85rem; }
+    h1 { font-size:clamp(2.3rem,6vw,4.3rem); line-height:1.08; margin:20px 0 16px; max-width:780px; }
+    .hero p { max-width:650px; color:#e5edff; font-size:1.08rem; }
+    .btn { display:inline-block; margin-top:26px; padding:12px 20px; background:white; color:#1744a5; border-radius:9px; text-decoration:none; font-weight:700; }
+    main { width:min(1080px,88%); margin:48px auto; }
+    section { margin:0 0 48px; }
+    h2 { color:var(--navy); font-size:1.8rem; margin-bottom:14px; }
+    .intro { color:var(--muted); max-width:780px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; margin-top:22px; }
+    .card { background:white; border:1px solid #e2e8f0; border-radius:15px; padding:23px; box-shadow:0 8px 25px rgba(16,35,63,.06); }
+    .card h3 { color:#1d4ed8; margin-bottom:8px; }
+    .pill { display:inline-block; background:var(--sky); color:#1e40af; border-radius:20px; padding:6px 11px; margin:6px 5px 0 0; font-size:.88rem; }
+    .contact { background:#10233f; color:white; padding:30px; border-radius:16px; }
+    .contact h2 { color:white; }
+    .contact p { color:#dbeafe; }
+    footer { text-align:center; color:var(--muted); padding:25px; font-size:.9rem; }
+    @media(max-width:600px) { nav { align-items:flex-start; } nav a { margin:8px 12px 0 0; display:inline-block; } .hero { padding-top:55px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">MI PORTAFOLIO</div>
+      <div><a href="#sobre-mi">Sobre mí</a><a href="#habilidades">Habilidades</a><a href="#proyecto">Proyecto</a></div>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <span class="tag">Proyecto académico · Desarrollo web</span>
+    <h1>Hola, soy Harold Michel.</h1>
+    <p>Esta es mi primera página web. En ella presento mis intereses, mis habilidades en formación y mi camino de aprendizaje en el mundo de la informática.</p>
+    <a class="btn" href="#sobre-mi">Conocer más</a>
+  </div>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p class="intro">Soy estudiante del área de informática y me interesa aprender a crear soluciones digitales. Este sitio forma parte de una actividad práctica para comenzar a trabajar con HTML, Git y GitHub.</p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Intereses y habilidades</h2>
+      <p class="intro">Estas son algunas áreas que me motivan y en las que deseo continuar desarrollándome.</p>
+      <div class="grid">
+        <article class="card"><h3>💻 Programación</h3><p>Aprender lógica, lenguajes de programación y desarrollo de aplicaciones.</p></article>
+        <article class="card"><h3>🌐 Desarrollo web</h3><p>Crear páginas accesibles, organizadas y adaptables a diferentes pantallas.</p></article>
+        <article class="card"><h3>⚽ Trabajo en equipo</h3><p>La colaboración, la disciplina y la constancia también forman parte del aprendizaje.</p></article>
+      </div>
+      <div style="margin-top:18px">
+        <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">Aprendizaje continuo</span>
+      </div>
+    </section>
+
+    <section id="proyecto">
+      <h2>Mi primer proyecto</h2>
+      <div class="card">
+        <h3>Portafolio personal</h3>
+        <p>Una página sencilla construida con HTML y CSS. El objetivo es practicar la creación de archivos, el seguimiento de cambios con Git y la publicación del código en GitHub.</p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Gracias por visitar</h2>
+      <p>Este proyecto representa el primer paso de un proceso de aprendizaje. ¡Seguiré mejorando y agregando nuevas funcionalidades!</p>
+    </section>
+  </main>
+  <footer>© 2026 · Proyecto académico de Git y GitHub</footer>
+</body>
+</html>
